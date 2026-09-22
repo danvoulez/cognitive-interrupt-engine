@@ -78,12 +78,10 @@ This repository remains **spec-first**. The following are deliberately not claim
 
 Those are implementation/empirical milestones in `ROADMAP.md`, not hidden assumptions.
 
-## Release blockers
+## Release status
 
-Before the first public GitHub/Zenodo release:
-
-1. choose the reuse license explicitly;
-2. add the final repository URL to citation metadata;
-3. decide whether v1.0 denotes the architecture paper/spec or the first working reference implementation;
-4. rerun the suite from the tagged release artifact;
-5. if a DOI is reserved, add it to the paper/repository metadata before final archival publication.
+The v1.0.0 release is explicitly the architectural technical report and
+specification. The repository URL is recorded in `CITATION.cff`, the source is
+licensed under MIT, and the full local suite passes from the release tree.
+The GitHub release and Zenodo archival record are the publication receipts for
+this version. The DOI is added to repository metadata after Zenodo assigns it.
