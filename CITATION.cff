@@ -5,7 +5,10 @@ type: software
 authors:
   - family-names: "Voulez"
     given-names: "Dan"
-version: 0.1.0
+version: 1.0.0
+date-released: 2026-09-22
+repository-code: "https://github.com/danvoulez/cognitive-interrupt-engine"
+license: "MIT"
 abstract: >-
   A spec-first architecture for durable AI workflows in which deterministic
   software owns continuity and external cognition is invoked only at typed
@@ -20,4 +23,3 @@ keywords:
   - Google ADK
   - Jev
   - Braintrust
-repository-code: "https://github.com/danvoulez/cognitive-interrupt-engine"

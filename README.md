@@ -91,13 +91,13 @@ workflow <- deterministic continuation <- typed result
 
 ## Status
 
-This repository is **spec-first**. The architecture is intentionally separated from the pinned implementation details so the Cognitive Interrupt model can survive changes in any particular runtime. The first implementation gate is deliberately small: prove that a workflow can suspend on a typed cognitive interrupt, lose its process, receive a scheduled external answer later, and resume correctly.
+Release **v1.0.0** is an architectural technical report and specification. The architecture is intentionally separated from the pinned implementation details so the Cognitive Interrupt model can survive changes in any particular runtime. The first implementation gate is deliberately small: prove that a workflow can suspend on a typed cognitive interrupt, lose its process, receive a scheduled external answer later, and resume correctly. That kill/restart/resume gate remains a future reference-implementation milestone.
 
 See [ROADMAP.md](ROADMAP.md) for the vertical PR sequence and [docs/PROVENANCE.md](docs/PROVENANCE.md) for the frozen evidence behind version-specific implementation claims.
 
 ## Citation
 
-If you use or discuss this architecture, cite the repository using [`CITATION.cff`](CITATION.cff). A Zenodo DOI can be added when the first public release is archived. No reuse license has been selected yet; that choice should be made explicitly before publication.
+If you use or discuss this architecture, cite release `v1.0.0` using [`CITATION.cff`](CITATION.cff) and the Zenodo DOI assigned to the archived record.
 
 ## Author
 
