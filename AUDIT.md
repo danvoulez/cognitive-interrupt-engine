@@ -84,4 +84,5 @@ The v1.0.0 release is explicitly the architectural technical report and
 specification. The repository URL is recorded in `CITATION.cff`, the source is
 licensed under MIT, and the full local suite passes from the release tree.
 The GitHub release and Zenodo archival record are the publication receipts for
-this version. The DOI is added to repository metadata after Zenodo assigns it.
+this version. The reserved DOI is recorded in repository metadata:
+`10.5281/zenodo.22893166`.

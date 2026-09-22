@@ -97,7 +97,7 @@ See [ROADMAP.md](ROADMAP.md) for the vertical PR sequence and [docs/PROVENANCE.m
 
 ## Citation
 
-If you use or discuss this architecture, cite release `v1.0.0` using [`CITATION.cff`](CITATION.cff) and the Zenodo DOI assigned to the archived record.
+If you use or discuss this architecture, cite release `v1.0.0` using [`CITATION.cff`](CITATION.cff) and [DOI 10.5281/zenodo.22893166](https://doi.org/10.5281/zenodo.22893166).
 
 ## Author
 

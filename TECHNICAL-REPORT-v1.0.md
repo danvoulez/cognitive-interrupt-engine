@@ -202,8 +202,8 @@ changing what v1.0 means.
 
 ## 10. Citation
 
-Use the metadata in `CITATION.cff` and cite release `v1.0.0` together with the
-Zenodo DOI assigned to the archived record.
+Use the metadata in `CITATION.cff` and cite release `v1.0.0` together with
+[DOI 10.5281/zenodo.22893166](https://doi.org/10.5281/zenodo.22893166).
 
 ## Appendix A — Repository map
 

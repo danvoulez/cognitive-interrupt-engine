@@ -9,6 +9,7 @@ version: 1.0.0
 date-released: 2026-09-22
 repository-code: "https://github.com/danvoulez/cognitive-interrupt-engine"
 license: "MIT"
+doi: "10.5281/zenodo.22893166"
 abstract: >-
   A spec-first architecture for durable AI workflows in which deterministic
   software owns continuity and external cognition is invoked only at typed
