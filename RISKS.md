@@ -107,6 +107,7 @@ If premium turns return vague prose, future models must reconstruct meaning and 
 
 **Mitigation:** cost is never optimized independently. Routing considers expected quality, latency, criticality, wait cost, and late outcomes.
 
+
 ## R11. ADK 2.9.0 does not fully validate complex raw JSON Schema on durable resume
 
 **Status:** Contract-integrity risk.

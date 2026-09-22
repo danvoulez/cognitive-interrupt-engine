@@ -55,6 +55,7 @@ Braintrust = empirical observation of what the body did and what worked
 
 External premium cognition exists outside the runtime and is inserted only at typed Cognitive Interrupt boundaries.
 
+
 ## Evidence boundary
 
 Exact frozen artifact hashes and source paths for these version-specific claims are recorded in [`PROVENANCE.md`](PROVENANCE.md).

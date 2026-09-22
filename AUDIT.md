@@ -83,7 +83,6 @@ Those are implementation/empirical milestones in `ROADMAP.md`, not hidden assump
 Before the first public GitHub/Zenodo release:
 
 1. choose the reuse license explicitly;
-2. add the final repository URL to citation metadata;
-3. decide whether v1.0 denotes the architecture paper/spec or the first working reference implementation;
-4. rerun the suite from the tagged release artifact;
-5. if a DOI is reserved, add it to the paper/repository metadata before final archival publication.
+2. decide whether v1.0 denotes the architecture paper/spec or the first working reference implementation;
+3. rerun the suite from the tagged release artifact;
+4. if a DOI is reserved, add it to the paper/repository metadata before final archival publication.
