@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use or discuss this architecture, please cite it."
+title: "Ephemeral Cognition, Persistent Continuation: A Cognitive Interrupt Architecture for Durable AI Workflows"
+type: software
+authors:
+  - family-names: "Voulez"
+    given-names: "Dan"
+version: 0.1.0
+abstract: >-
+  A spec-first architecture for durable AI workflows in which deterministic
+  software owns continuity and external cognition is invoked only at typed
+  semantic gaps. The reference realization combines Google ADK, Jev/TypeSafe
+  System One, and Braintrust.
+keywords:
+  - cognitive interrupts
+  - durable workflows
+  - ephemeral cognition
+  - AI orchestration
+  - LLM agents
+  - Google ADK
+  - Jev
+  - Braintrust

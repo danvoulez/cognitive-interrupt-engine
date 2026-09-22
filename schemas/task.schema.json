@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:cognitive-interrupt-engine:schema:task:0.1",
+  "title": "Task",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["task_type", "parents", "inputs", "expected_outputs", "requirements", "lifecycle"],
+  "properties": {
+    "task_type": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+    "parents": {
+      "type": "array",
+      "items": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+      "uniqueItems": true
+    },
+    "inputs": {"type": "object"},
+    "expected_outputs": {"type": "object"},
+    "requirements": {
+      "type": "object",
+      "properties": {
+        "capabilities": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}
+      },
+      "additionalProperties": true
+    },
+    "lifecycle": {"enum": ["finite", "recurring", "persistent"]}
+  }
+}

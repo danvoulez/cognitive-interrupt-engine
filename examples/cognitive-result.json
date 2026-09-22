@@ -1,0 +1,16 @@
+{
+  "interrupt_id": "interrupt-001",
+  "obligation_ref": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+  "resolution": {
+    "summary": "The failure is novel and requires a new deterministic preflight."
+  },
+  "artifacts": [],
+  "discoveries": [],
+  "program_patch": {},
+  "deterministic_continuation": {
+    "now_possible": ["run_preflight_design_checks"],
+    "required_checks": ["validate_patch", "run_tests"]
+  },
+  "residual_uncertainty": [],
+  "handoff": {}
+}

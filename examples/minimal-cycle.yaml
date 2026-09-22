@@ -1,0 +1,44 @@
+program: cognitive_interrupt_demo
+
+objective:
+  name: explain_unknown_failure
+
+cycle:
+  - id: collect_evidence
+    kind: deterministic
+    produces: evidence_bundle
+
+  - id: narrow_failure
+    kind: jev
+    primitive: choice
+    state: evidence_bundle
+    choices:
+      - known_class
+      - novel_class
+
+  - id: investigate_novel
+    kind: cognitive_interrupt
+    when: narrow_failure == novel_class
+    requires:
+      reasoning: deep
+      tools: [web]
+    input:
+      evidence: evidence_bundle
+    output_schema: schemas/cognitive-result.schema.json
+
+  - id: verify_result
+    kind: deterministic
+    after: investigate_novel
+    actions:
+      - validate_schema
+      - hash_artifacts
+      - run_tests
+      - materialize_child_tasks
+
+observability:
+  correlate:
+    - program_revision
+    - workflow_hash
+    - task_hash
+    - execution_id
+    - interrupt_id

@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:cognitive-interrupt-engine:schema:cognitive-result:0.1",
+  "title": "CognitiveResult",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "interrupt_id",
+    "obligation_ref",
+    "resolution",
+    "artifacts",
+    "discoveries",
+    "program_patch",
+    "deterministic_continuation",
+    "residual_uncertainty",
+    "handoff"
+  ],
+  "properties": {
+    "interrupt_id": {"type": "string", "minLength": 1},
+    "obligation_ref": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+    "resolution": {"type": "object"},
+    "artifacts": {"type": "array", "items": {"type": "object"}},
+    "discoveries": {"type": "array", "items": {"type": "object"}},
+    "program_patch": {"type": "object"},
+    "deterministic_continuation": {
+      "type": "object",
+      "required": ["now_possible", "required_checks"],
+      "properties": {
+        "now_possible": {"type": "array", "items": {"type": "string"}},
+        "required_checks": {"type": "array", "items": {"type": "string"}}
+      },
+      "additionalProperties": true
+    },
+    "residual_uncertainty": {"type": "array", "items": {"type": "object"}},
+    "handoff": {"type": "object"}
+  }
+}

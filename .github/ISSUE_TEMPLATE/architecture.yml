@@ -1,0 +1,20 @@
+name: Architecture issue
+description: Record a design gap, contradiction, or implementation risk.
+title: "[architecture] "
+body:
+  - type: textarea
+    attributes:
+      label: Problem
+      description: What architectural invariant, mapping, or assumption is affected?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Evidence
+      description: Link to source, runtime observation, or reproducible test.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Proposed change
+      description: Prefer a change that preserves persistent continuation and avoids parallel infrastructure.
